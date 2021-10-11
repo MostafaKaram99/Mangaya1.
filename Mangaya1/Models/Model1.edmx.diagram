@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a5a8ae46bf24cbdb8a48313224cc906" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="mangayaModel.category_manga" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.category_type" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.favourit_user" Width="1.5" PointX="6" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.last_read" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.manga" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.notification" Width="1.5" PointX="8" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.report" Width="1.5" PointX="8" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.salary" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.support" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.translation" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mangayaModel.user" Width="1.5" PointX="5.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="mangayaModel.FK_category_manga_category_type" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_category_manga_manga" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_favourit_user_manga" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_favourit_user_user" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_last_read_manga" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_last_read_user" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_report_manga" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_translation_manga" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_notification_user" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_report_user" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_salary_support" ManuallyRouted="false" />
+        <AssociationConnector Association="mangayaModel.FK_translation_support" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="mangayaModel.chapter_content" Width="1.5" PointX="5.25" PointY="11.75" />
+        <EntityTypeShape EntityType="mangayaModel.chapter" Width="1.5" PointX="3" PointY="11.75" />
+        <AssociationConnector Association="mangayaModel.FK_chapter_content_chapter" />
+        <AssociationConnector Association="mangayaModel.FK_chapter_manga" />
+        <AssociationConnector Association="mangayaModel.FK_translation_chapter" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
